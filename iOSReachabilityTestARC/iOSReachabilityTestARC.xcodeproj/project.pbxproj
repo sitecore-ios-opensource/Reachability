@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B4E7D6F61678ED2600C01DFA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAEB207D147A7ED2009545B6 /* Foundation.framework */; };
+		B4E7D6FB1678ED2600C01DFA /* iOSReachabilityFramework.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B4E7D6FA1678ED2600C01DFA /* iOSReachabilityFramework.h */; };
+		B4E7D6FD1678ED2600C01DFA /* iOSReachabilityFramework.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E7D6FC1678ED2600C01DFA /* iOSReachabilityFramework.m */; };
+		B4E7D7021678ED4800C01DFA /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = EAEB2099147A7EE6009545B6 /* Reachability.m */; };
+		B4E7D7031678ED4800C01DFA /* TMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EAEB208B147A7ED2009545B6 /* TMAppDelegate.m */; };
+		B4E7D7041678ED4800C01DFA /* TMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAEB208E147A7ED2009545B6 /* TMViewController.m */; };
+		B4E7D7051678ED5B00C01DFA /* Reachability.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = EAEB2098147A7EE6009545B6 /* Reachability.h */; };
+		B4E7D7061678ED5B00C01DFA /* TMAppDelegate.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = EAEB208A147A7ED2009545B6 /* TMAppDelegate.h */; };
+		B4E7D7071678ED5B00C01DFA /* TMViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = EAEB208D147A7ED2009545B6 /* TMViewController.h */; };
 		EAEB207C147A7ED2009545B6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAEB207B147A7ED2009545B6 /* UIKit.framework */; };
 		EAEB207E147A7ED2009545B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAEB207D147A7ED2009545B6 /* Foundation.framework */; };
 		EAEB2080147A7ED2009545B6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAEB207F147A7ED2009545B6 /* CoreGraphics.framework */; };
@@ -19,7 +28,27 @@
 		EAEB209C147A7F00009545B6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAEB209B147A7F00009545B6 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		B4E7D6F31678ED2600C01DFA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				B4E7D7051678ED5B00C01DFA /* Reachability.h in CopyFiles */,
+				B4E7D7061678ED5B00C01DFA /* TMAppDelegate.h in CopyFiles */,
+				B4E7D7071678ED5B00C01DFA /* TMViewController.h in CopyFiles */,
+				B4E7D6FB1678ED2600C01DFA /* iOSReachabilityFramework.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		B4E7D6F51678ED2600C01DFA /* libiOSReachabilityFramework.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libiOSReachabilityFramework.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4E7D6F91678ED2600C01DFA /* iOSReachabilityFramework-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOSReachabilityFramework-Prefix.pch"; sourceTree = "<group>"; };
+		B4E7D6FA1678ED2600C01DFA /* iOSReachabilityFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iOSReachabilityFramework.h; sourceTree = "<group>"; };
+		B4E7D6FC1678ED2600C01DFA /* iOSReachabilityFramework.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSReachabilityFramework.m; sourceTree = "<group>"; };
 		EAEB2077147A7ED2009545B6 /* iOSReachabilityTestARC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSReachabilityTestARC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAEB207B147A7ED2009545B6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		EAEB207D147A7ED2009545B6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -39,6 +68,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B4E7D6F21678ED2600C01DFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4E7D6F61678ED2600C01DFA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EAEB2074147A7ED2009545B6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -53,10 +90,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B4E7D6F71678ED2600C01DFA /* iOSReachabilityFramework */ = {
+			isa = PBXGroup;
+			children = (
+				B4E7D6FA1678ED2600C01DFA /* iOSReachabilityFramework.h */,
+				B4E7D6FC1678ED2600C01DFA /* iOSReachabilityFramework.m */,
+				B4E7D6F81678ED2600C01DFA /* Supporting Files */,
+			);
+			path = iOSReachabilityFramework;
+			sourceTree = "<group>";
+		};
+		B4E7D6F81678ED2600C01DFA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B4E7D6F91678ED2600C01DFA /* iOSReachabilityFramework-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		EAEB206C147A7ED2009545B6 = {
 			isa = PBXGroup;
 			children = (
 				EAEB2081147A7ED2009545B6 /* iOSReachabilityTestARC */,
+				B4E7D6F71678ED2600C01DFA /* iOSReachabilityFramework */,
 				EAEB207A147A7ED2009545B6 /* Frameworks */,
 				EAEB2078147A7ED2009545B6 /* Products */,
 			);
@@ -66,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				EAEB2077147A7ED2009545B6 /* iOSReachabilityTestARC.app */,
+				B4E7D6F51678ED2600C01DFA /* libiOSReachabilityFramework.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -110,6 +167,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		B4E7D6F41678ED2600C01DFA /* iOSReachabilityFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4E7D7001678ED2600C01DFA /* Build configuration list for PBXNativeTarget "iOSReachabilityFramework" */;
+			buildPhases = (
+				B4E7D6F11678ED2600C01DFA /* Sources */,
+				B4E7D6F21678ED2600C01DFA /* Frameworks */,
+				B4E7D6F31678ED2600C01DFA /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOSReachabilityFramework;
+			productName = iOSReachabilityFramework;
+			productReference = B4E7D6F51678ED2600C01DFA /* libiOSReachabilityFramework.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		EAEB2076147A7ED2009545B6 /* iOSReachabilityTestARC */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = EAEB2095147A7ED2009545B6 /* Build configuration list for PBXNativeTarget "iOSReachabilityTestARC" */;
@@ -148,6 +222,7 @@
 			projectRoot = "";
 			targets = (
 				EAEB2076147A7ED2009545B6 /* iOSReachabilityTestARC */,
+				B4E7D6F41678ED2600C01DFA /* iOSReachabilityFramework */,
 			);
 		};
 /* End PBXProject section */
@@ -165,6 +240,17 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B4E7D6F11678ED2600C01DFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4E7D7021678ED4800C01DFA /* Reachability.m in Sources */,
+				B4E7D7031678ED4800C01DFA /* TMAppDelegate.m in Sources */,
+				B4E7D7041678ED4800C01DFA /* TMViewController.m in Sources */,
+				B4E7D6FD1678ED2600C01DFA /* iOSReachabilityFramework.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EAEB2073147A7ED2009545B6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -198,6 +284,43 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		B4E7D6FE1678ED2600C01DFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DSTROOT = /tmp/iOSReachabilityFramework.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOSReachabilityFramework/iOSReachabilityFramework-Prefix.pch";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B4E7D6FF1678ED2600C01DFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DSTROOT = /tmp/iOSReachabilityFramework.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOSReachabilityFramework/iOSReachabilityFramework-Prefix.pch";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		EAEB2093147A7ED2009545B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -270,6 +393,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B4E7D7001678ED2600C01DFA /* Build configuration list for PBXNativeTarget "iOSReachabilityFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4E7D6FE1678ED2600C01DFA /* Debug */,
+				B4E7D6FF1678ED2600C01DFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		EAEB2071147A7ED2009545B6 /* Build configuration list for PBXProject "iOSReachabilityTestARC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
