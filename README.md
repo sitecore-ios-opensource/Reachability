@@ -6,6 +6,14 @@ In addition to the standard NSNotification it supports the use of Blocks for whe
 
 Finally you can specify wether or not a WWAN connection is considered "reachable".
 
+#### Requirements
+
+Once you have added the ```h/.m``` files to your project simply go to the ```Project->TARGETS->Build Phases->Link Binary With Libraries``` then press the plus in the lower left of the list. Add ```SystemConfiguration.framework```. Boom, you're done.
+
+#### Tell the world
+
+Head over to [Projects using Reachability](https://github.com/tonymillion/Reachability/wiki/Projects-using-Reachability) and add your project for "Maximum Wins!"
+
 ## A Simple example
 This sample uses Blocks to tell you when the interface state has changed. The blocks will be called on a BACKGROUND THREAD so you need to dispatch UI updates onto the main thread.
 

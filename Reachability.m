@@ -509,4 +509,13 @@ static void TMReachabilityCallback(SCNetworkReachabilityRef target, SCNetworkRea
     });
 }
 
+#pragma mark - Debug Description
+
+- (NSString *) description;
+{
+    NSString *description = [NSString stringWithFormat:@"<%@: %#x>",
+                             NSStringFromClass([self class]), (unsigned int) self];
+    return description;
+}
+
 @end
