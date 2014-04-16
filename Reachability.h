@@ -91,7 +91,7 @@ typedef void (^NetworkUnreachable)(Reachability * reachability);
 +(Reachability*)reachabilityWithAddress:(const struct sockaddr_in*)hostAddress;
 +(Reachability*)reachabilityForLocalWiFi;
 
--(Reachability *)initWithReachabilityRef:(SCNetworkReachabilityRef)ref;
+-(Reachability*)initWithReachabilityRef:(SCNetworkReachabilityRef)ref;
 
 -(BOOL)startNotifier;
 -(void)stopNotifier;
