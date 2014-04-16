@@ -28,7 +28,7 @@
 #import "Reachability.h"
 
 
-NSString *const kReachabilityChangedNotification = @"kReachabilityChangedNotification";
+NSString* const kReachabilityChangedNotification = @"kReachabilityChangedNotification";
 
 @interface Reachability ()
 
@@ -49,7 +49,7 @@ NSString *const kReachabilityChangedNotification = @"kReachabilityChangedNotific
 
 @end
 
-static NSString *reachabilityFlags(SCNetworkReachabilityFlags flags) 
+static NSString* reachabilityFlags(SCNetworkReachabilityFlags flags) 
 {
     return [NSString stringWithFormat:@"%c%c %c%c%c%c%c%c%c",
 #if	TARGET_OS_IPHONE
@@ -517,9 +517,9 @@ static void TMReachabilityCallback(SCNetworkReachabilityRef target, SCNetworkRea
 
 #pragma mark - Debug Description
 
-- (NSString *) description
+-(NSString*) description
 {
-    NSString *description = [NSString stringWithFormat:@"<%@: %#x>",
+    NSString* description = [NSString stringWithFormat:@"<%@: %#x>",
                              NSStringFromClass([self class]), (unsigned int) self];
     return description;
 }
